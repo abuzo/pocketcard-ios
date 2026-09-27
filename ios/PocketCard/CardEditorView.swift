@@ -15,6 +15,7 @@ struct CardEditorView: View {
     @State private var photoSelection: PhotosPickerItem?
     @State private var importing = false
     @State private var choosingFile = false
+    @State private var croppingPhoto: CropPhoto?
     @State private var confirmingExit = false
     @State private var error: UserMessage?
     init(initial: Card, onSaved: @escaping (Card) -> Void) {
@@ -87,6 +88,9 @@ struct CardEditorView: View {
                 case .failure: error = UserMessage("Изображение не выбрано. Попробуйте открыть другой файл.")
                 }
             }
+            .fullScreenCover(item:$croppingPhoto) { photo in
+                PhotoCropView(data:photo.data,crop:$card.crop)
+            }
             .alert(item:$error) { Alert(title:Text($0.title),message:Text($0.text),dismissButton:.default(Text("Понятно"))) }
             .confirmationDialog("Сохранить изменения?",isPresented:$confirmingExit,titleVisibility:.visible) {
                 Button("Сохранить",action:save)
@@ -103,12 +107,9 @@ struct CardEditorView: View {
             }.disabled(importing)
             Button("Выбрать из Файлов",systemImage:"folder") { choosingFile = true }.disabled(importing)
             if importing { ProgressView("Подготовка фото…") }
-            if sourceData != nil {
-                Picker("Кадр",selection:$card.crop.aspect) { ForEach(CropAspect.allCases) { Text($0.title).tag($0) } }
-                cropSlider("Масштаб",value:$card.crop.zoom,range:1...3)
-                cropSlider("По горизонтали",value:$card.crop.horizontal,range:0...1)
-                cropSlider("По вертикали",value:$card.crop.vertical,range:0...1)
-                Button("Сбросить кадрирование") { card.crop = CropSettings() }
+            if let sourceData {
+                Button("Кадрировать фото", systemImage:"crop") { croppingPhoto = CropPhoto(data:sourceData) }
+                    .disabled(importing).accessibilityIdentifier("crop-photo")
             }
             if card.imageID != nil {
                 Button("Убрать фото",role:.destructive) {
@@ -140,11 +141,9 @@ struct CardEditorView: View {
             Text("Название поля — до 40 символов, значение — до 2000. Все значения сохраняются как текст, включая ведущие нули. Для Wallet нужны заполненные поля.")
         }
     }
-    private func cropSlider(_ title: String, value: Binding<Double>, range: ClosedRange<Double>) -> some View {
-        VStack(alignment:.leading) { Text(title).font(.caption).foregroundStyle(.secondary); Slider(value:value,in:range).accessibilityLabel(title) }
-    }
     private func acceptPhoto(_ data: Data) {
         sourceData = data; pendingImageData = data; card.imageID = UUID(); card.crop = CropSettings()
+        croppingPhoto = CropPhoto(data:data)
     }
     private func save() {
         do { let saved = try model.save(card,image:pendingImageData); onSaved(saved); dismiss() }
