@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = "1";
+	"classes" = {
+	};
+	"objectVersion" = "56";
+	"objects" = {
+		"00C45FD35CB0F9C5F764F070" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				"B6CDB6E5D160E013280D3C68",
+				"E02A90D9643568EA39115CFB",
+			);
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"09D4DAA23B554A59A0C43053" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/SettingsView.swift";
+			"sourceTree" = "<group>";
+		};
+		"0E2635B454FF4DE9C5B4DD2E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "09D4DAA23B554A59A0C43053";
+		};
+		"0F045DD085FEF7297600DE0A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8310005973FC15BC57DF2490";
+		};
+		"1E3CFC0CF6EF202C9E2261D8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/ImagePipeline.swift";
+			"sourceTree" = "<group>";
+		};
+		"23E71898B295E3A67AB744F2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xcconfig";
+			"path" = "Local.xcconfig.example";
+			"sourceTree" = "<group>";
+		};
+		"23FB2CAEB38545C3793097DD" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_MODULE_NAME" = "PocketCard";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(POCKETCARD_BUNDLE_ID)";
+				"CODE_SIGN_ENTITLEMENTS" = "$(PC_APP_ENTITLEMENTS)";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"INFOPLIST_FILE" = "PocketCard/Info.plist";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD" = "NO";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"MARKETING_VERSION" = "0.1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+			};
+			"name" = "Release";
+		};
+		"276364BCBFC7637365CF2D85" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCardTests/ImagePipelineTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"29C7B681C8D62CBAC94D51C0" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "6999223B144664B5601B7EE0";
+			"buildPhases" = (
+				"507A349611DBB42F9CF9069B",
+				"2D3446C63F9EEB9172CAE05B",
+				"4C29BBC16528FEA9E858725B",
+			);
+			"buildRules" = (
+			);
+			"dependencies" = (
+			);
+			"name" = "PocketCard";
+			"packageProductDependencies" = (
+				"E90F893B650512E602D632B9",
+			);
+			"productName" = "PocketCard";
+			"productReference" = "B6CDB6E5D160E013280D3C68";
+			"productType" = "com.apple.product-type.application";
+		};
+		"2D3446C63F9EEB9172CAE05B" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"870D2BA82B9E8BC280A08BAF",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"3170B48B66A770FF88095E2A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "1E3CFC0CF6EF202C9E2261D8";
+		};
+		"3CF6A4F2E05B3AAE7E2CBFEE" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_MODULE_NAME" = "PocketCard";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(POCKETCARD_BUNDLE_ID)";
+				"CODE_SIGN_ENTITLEMENTS" = "$(PC_APP_ENTITLEMENTS)";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"INFOPLIST_FILE" = "PocketCard/Info.plist";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD" = "NO";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"MARKETING_VERSION" = "0.1.0";
+				"CURRENT_PROJECT_VERSION" = "1";
+			};
+			"name" = "Debug";
+		};
+		"481FD354A990280BFE8E4E87" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/Configuration.swift";
+			"sourceTree" = "<group>";
+		};
+		"48B1AC50F1FA7C27727419FB" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCardTests/RepositoryProtectionTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"4B5E044964383116A715E37D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "B830D22842DDDDAEECA2CB9D";
+		};
+		"4C29BBC16528FEA9E858725B" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"E6555D9CB51E8C5F8940DAFC",
+				"939D38CE9EF2FE0702635544",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"507A349611DBB42F9CF9069B" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"62668681C383B924557BB6B0",
+				"4B5E044964383116A715E37D",
+				"DBC26CD54D380EFBDCF1C976",
+				"712DA5FC0A0FB96E46AAB3DA",
+				"F21D75072B0B208E8DAFCE08",
+				"3170B48B66A770FF88095E2A",
+				"C2F0FDEE5A04D3CEBDD29058",
+				"979522190D34CA19B8191CA5",
+				"8467664C1C38B57459B623DF",
+				"0E2635B454FF4DE9C5B4DD2E",
+				"7C3C03B54F9E07CF3B093740",
+				"7030BD5076A80B9939D1925D",
+				"0F045DD085FEF7297600DE0A",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"518D55D7CA00281E1B74AAE3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"path" = "PocketCard/Assets.xcassets";
+			"sourceTree" = "<group>";
+		};
+		"57F08CECB6D72BDFF1E06830" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"path" = "PocketCard/PocketCard.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"62668681C383B924557BB6B0" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A372CD674890450FFC1CEDF8";
+		};
+		"64552972D6C858E247300FAA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "PocketCard/PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"662C60B725624E27B4550662" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCardTests/WalletRequestTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"678CCD61ED80A993D4E405BC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/CardEditorView.swift";
+			"sourceTree" = "<group>";
+		};
+		"6999223B144664B5601B7EE0" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"3CF6A4F2E05B3AAE7E2CBFEE",
+				"23FB2CAEB38545C3793097DD",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"6A99B8B11CBB887D614E2E82" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "PocketCard/Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"7030BD5076A80B9939D1925D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A45961A565EB50AF33BDC16C";
+		};
+		"712DA5FC0A0FB96E46AAB3DA" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E86DA9C6C5B0934D52FA2B91";
+		};
+		"791269BE47672454DB2BB6A1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "276364BCBFC7637365CF2D85";
+		};
+		"7C3C03B54F9E07CF3B093740" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F300A08109EA09A392F4CCDA";
+		};
+		"7EC8F98B7A265120217712DE" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "896302F3B0CBBDA7B3457F1A";
+			"buildPhases" = (
+				"D8A36DC187AB6C5BBF82E78D",
+				"E0EED46BDB566914F73FAFC1",
+				"F8D353CCDB02EF8EBB3732BA",
+			);
+			"buildRules" = (
+			);
+			"dependencies" = (
+				"D2F9C6ACC3CFD758A2AF1D96",
+			);
+			"name" = "PocketCardTests";
+			"packageProductDependencies" = (
+				"EAFAF8B8988B2E28E091B1F8",
+			);
+			"productName" = "PocketCardTests";
+			"productReference" = "E02A90D9643568EA39115CFB";
+			"productType" = "com.apple.product-type.bundle.unit-test";
+		};
+		"8310005973FC15BC57DF2490" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/WalletPreviewView.swift";
+			"sourceTree" = "<group>";
+		};
+		"8467664C1C38B57459B623DF" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "93CF09BC93EBAF8357D1C8F8";
+		};
+		"870D2BA82B9E8BC280A08BAF" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = "E90F893B650512E602D632B9";
+		};
+		"877A6BA951A2EA0025A2ABE8" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"ALWAYS_SEARCH_USER_PATHS" = "NO";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"CLANG_WARN_DOCUMENTATION_COMMENTS" = "YES";
+				"CLANG_WARN_UNREACHABLE_CODE" = "YES";
+				"GCC_C_LANGUAGE_STANDARD" = "gnu17";
+				"GCC_WARN_UNUSED_VARIABLE" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"SWIFT_STRICT_CONCURRENCY" = "targeted";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"ENABLE_TESTABILITY" = "YES";
+				"GCC_OPTIMIZATION_LEVEL" = "0";
+				"ONLY_ACTIVE_ARCH" = "YES";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+			};
+			"name" = "Debug";
+			"baseConfigurationReference" = "961F0A196E943C7347D98B49";
+		};
+		"896302F3B0CBBDA7B3457F1A" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"E2657B9FA91DD4A55652006F",
+				"B4343C19535B18410503AED7",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"8EB76439AA5A92773F7BA40F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "48B1AC50F1FA7C27727419FB";
+		};
+		"8F3A46EE8DF16220C302284E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/PocketCardApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"939D38CE9EF2FE0702635544" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "64552972D6C858E247300FAA";
+		};
+		"93CF09BC93EBAF8357D1C8F8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/PrivacyShield.swift";
+			"sourceTree" = "<group>";
+		};
+		"959134B361DD7E21ADEA3164" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"ALWAYS_SEARCH_USER_PATHS" = "NO";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"CLANG_WARN_DOCUMENTATION_COMMENTS" = "YES";
+				"CLANG_WARN_UNREACHABLE_CODE" = "YES";
+				"GCC_C_LANGUAGE_STANDARD" = "gnu17";
+				"GCC_WARN_UNUSED_VARIABLE" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"SWIFT_STRICT_CONCURRENCY" = "targeted";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"VALIDATE_PRODUCT" = "YES";
+			};
+			"name" = "Release";
+			"baseConfigurationReference" = "961F0A196E943C7347D98B49";
+		};
+		"961F0A196E943C7347D98B49" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xcconfig";
+			"path" = "Configurations/Base.xcconfig";
+			"sourceTree" = "<group>";
+		};
+		"979522190D34CA19B8191CA5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8F3A46EE8DF16220C302284E";
+		};
+		"98F54143AB4E86B28C3AFEE0" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"BuildIndependentTargetsInParallel" = "YES";
+				"LastUpgradeCheck" = "1600";
+				"TargetAttributes" = {
+					"29C7B681C8D62CBAC94D51C0" = {
+						"CreatedOnToolsVersion" = "16.0";
+					};
+					"7EC8F98B7A265120217712DE" = {
+						"CreatedOnToolsVersion" = "16.0";
+						"TestTargetID" = "29C7B681C8D62CBAC94D51C0";
+					};
+				};
+			};
+			"buildConfigurationList" = "FCBE72429C0B1B8B87DC8CC9";
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "ru";
+			"hasScannedForEncodings" = "0";
+			"knownRegions" = (
+				"ru",
+				"en",
+				"Base",
+			);
+			"mainGroup" = "ADCF10F76EBF2A74473E9DC4";
+			"packageReferences" = (
+				"E1823BFFAEB4E505466451C6",
+			);
+			"productRefGroup" = "00C45FD35CB0F9C5F764F070";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = (
+				"29C7B681C8D62CBAC94D51C0",
+				"7EC8F98B7A265120217712DE",
+			);
+		};
+		"A372CD674890450FFC1CEDF8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/AppModel.swift";
+			"sourceTree" = "<group>";
+		};
+		"A45961A565EB50AF33BDC16C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/WalletCoordinator.swift";
+			"sourceTree" = "<group>";
+		};
+		"ADCF10F76EBF2A74473E9DC4" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				"A372CD674890450FFC1CEDF8",
+				"B830D22842DDDDAEECA2CB9D",
+				"678CCD61ED80A993D4E405BC",
+				"E86DA9C6C5B0934D52FA2B91",
+				"481FD354A990280BFE8E4E87",
+				"1E3CFC0CF6EF202C9E2261D8",
+				"FEA2B8A11B20C779CF383944",
+				"8F3A46EE8DF16220C302284E",
+				"93CF09BC93EBAF8357D1C8F8",
+				"09D4DAA23B554A59A0C43053",
+				"F300A08109EA09A392F4CCDA",
+				"A45961A565EB50AF33BDC16C",
+				"8310005973FC15BC57DF2490",
+				"276364BCBFC7637365CF2D85",
+				"48B1AC50F1FA7C27727419FB",
+				"662C60B725624E27B4550662",
+				"518D55D7CA00281E1B74AAE3",
+				"64552972D6C858E247300FAA",
+				"6A99B8B11CBB887D614E2E82",
+				"57F08CECB6D72BDFF1E06830",
+				"23E71898B295E3A67AB744F2",
+				"961F0A196E943C7347D98B49",
+				"00C45FD35CB0F9C5F764F070",
+			);
+			"sourceTree" = "<group>";
+		};
+		"B4343C19535B18410503AED7" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(POCKETCARD_BUNDLE_ID).tests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/PocketCard.app/PocketCard";
+				"TEST_TARGET_NAME" = "PocketCard";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+			};
+			"name" = "Release";
+		};
+		"B56E2FF3DA613C4AF2E7DAB1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "662C60B725624E27B4550662";
+		};
+		"B6CDB6E5D160E013280D3C68" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = "0";
+			"path" = "PocketCard.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"B830D22842DDDDAEECA2CB9D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/CardDetailView.swift";
+			"sourceTree" = "<group>";
+		};
+		"C2F0FDEE5A04D3CEBDD29058" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "FEA2B8A11B20C779CF383944";
+		};
+		"C64E8946628E1B8463592598" = {
+			"isa" = "PBXBuildFile";
+			"productRef" = "EAFAF8B8988B2E28E091B1F8";
+		};
+		"D2F9C6ACC3CFD758A2AF1D96" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "29C7B681C8D62CBAC94D51C0";
+			"targetProxy" = "D36D33020B6BB89396BD1B34";
+		};
+		"D36D33020B6BB89396BD1B34" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "98F54143AB4E86B28C3AFEE0";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "29C7B681C8D62CBAC94D51C0";
+			"remoteInfo" = "PocketCard";
+		};
+		"D8A36DC187AB6C5BBF82E78D" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"791269BE47672454DB2BB6A1",
+				"8EB76439AA5A92773F7BA40F",
+				"B56E2FF3DA613C4AF2E7DAB1",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"DBC26CD54D380EFBDCF1C976" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "678CCD61ED80A993D4E405BC";
+		};
+		"E02A90D9643568EA39115CFB" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = "0";
+			"path" = "PocketCardTests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"E0EED46BDB566914F73FAFC1" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+				"C64E8946628E1B8463592598",
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"E1823BFFAEB4E505466451C6" = {
+			"isa" = "XCLocalSwiftPackageReference";
+			"relativePath" = "..";
+		};
+		"E2657B9FA91DD4A55652006F" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "$(POCKETCARD_BUNDLE_ID).tests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/PocketCard.app/PocketCard";
+				"TEST_TARGET_NAME" = "PocketCard";
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+			};
+			"name" = "Debug";
+		};
+		"E6555D9CB51E8C5F8940DAFC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "518D55D7CA00281E1B74AAE3";
+		};
+		"E86DA9C6C5B0934D52FA2B91" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/CardPreview.swift";
+			"sourceTree" = "<group>";
+		};
+		"E90F893B650512E602D632B9" = {
+			"isa" = "XCSwiftPackageProductDependency";
+			"package" = "E1823BFFAEB4E505466451C6";
+			"productName" = "PocketCardCore";
+		};
+		"EAFAF8B8988B2E28E091B1F8" = {
+			"isa" = "XCSwiftPackageProductDependency";
+			"package" = "E1823BFFAEB4E505466451C6";
+			"productName" = "PocketCardCore";
+		};
+		"F21D75072B0B208E8DAFCE08" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "481FD354A990280BFE8E4E87";
+		};
+		"F300A08109EA09A392F4CCDA" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/WalletClient.swift";
+			"sourceTree" = "<group>";
+		};
+		"F8D353CCDB02EF8EBB3732BA" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"FCBE72429C0B1B8B87DC8CC9" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"877A6BA951A2EA0025A2ABE8",
+				"959134B361DD7E21ADEA3164",
+			);
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"FEA2B8A11B20C779CF383944" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "PocketCard/LibraryView.swift";
+			"sourceTree" = "<group>";
+		};
+	};
+	"rootObject" = "98F54143AB4E86B28C3AFEE0";
+}

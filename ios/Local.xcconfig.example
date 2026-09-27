@@ -1,0 +1,7 @@
+// Copy to ios/Local.xcconfig, then replace the example values with your own.
+// Team/pass identifiers are not signing keys. Never place a certificate/key/token here.
+POCKETCARD_BUNDLE_ID = com.yourcompany.pocketcard
+DEVELOPMENT_TEAM = YOURTEAMID
+WALLET_PASS_TYPE_ID = pass.com.yourcompany.pocketcard
+WALLET_ACCESS_ENABLED = YES
+PC_APP_ENTITLEMENTS = PocketCard/PocketCard.entitlements

@@ -1,0 +1,8 @@
+// This default opens and runs on an iPhone Simulator without Apple credentials.
+POCKETCARD_BUNDLE_ID = com.example.pocketcard
+DEVELOPMENT_TEAM =
+WALLET_PASS_TYPE_ID =
+WALLET_ACCESS_ENABLED = NO
+PC_APP_ENTITLEMENTS =
+// Local overrides are intentionally ignored by git. No keys belong in this file.
+#include? "../Local.xcconfig"
